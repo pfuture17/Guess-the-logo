@@ -43,7 +43,7 @@ function checkAnswer() {
     alert("Incorrect! Please Try Again");
     score--;
     document.getElementById("score").innerHTML = score;
-    document.getElementById("answer").value = " ";
+    document.getElementById("answer").value = "";
     if (score <= 0) {
       resultElement.innerHTML = "GAME OVER BITCH, GAME WILL RESTART";
       setTimeout(function () {
