@@ -45,8 +45,10 @@ function checkAnswer() {
     document.getElementById("score").innerHTML = score;
     document.getElementById("answer").value = " ";
     if (score <= 0) {
-      resultElement.innerHTML = "GAME OVER BITCH";
-      location.reload();
+      resultElement.innerHTML = "GAME OVER BITCH, GAME WILL RESTART";
+      setTimeout(function () {
+        location.reload();
+      }, 3000);
     }
   }
 }
